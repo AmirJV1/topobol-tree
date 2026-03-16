@@ -10,5 +10,7 @@ export interface Profile {
     web: string
     Whatsapp: string
     Facebook: string
+    Whatsapp2: string
+    mapsLocation: string
     [key: string]: string
 }

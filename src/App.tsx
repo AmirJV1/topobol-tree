@@ -131,6 +131,13 @@ function App() {
             </a>
           )}
 
+          {profile.Whatsapp2 && (
+            <a href={`https://wa.me/${profile.Whatsapp2.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="link-card">
+              <img src="/wp.png" alt="Whatsapp 2" className="link-icon" />
+              Whatsapp 2
+            </a>
+          )}
+
           {profile.Facebook && (
             <a href={formatUrl(profile.Facebook)} target="_blank" rel="noopener noreferrer" className="link-card">
               <img src="/fb.png" alt="Facebook" className="link-icon" />
@@ -147,6 +154,12 @@ function App() {
             <a href={formatUrl(profile.web)} target="_blank" rel="noopener noreferrer" className="link-card">
               <img src="/web.png" alt="Web" className="link-icon" />
               Web
+            </a>
+          )}
+          {profile.mapsLocation && (
+            <a href={formatUrl(profile.mapsLocation)} target="_blank" rel="noopener noreferrer" className="link-card">
+              <img src="/maps.png" alt="Ubicación" className="link-icon" />
+              Ubicación
             </a>
           )}
         </div>
